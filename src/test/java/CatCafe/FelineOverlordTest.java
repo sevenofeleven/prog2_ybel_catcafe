@@ -1,4 +1,5 @@
 package CatCafe;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import catcafe.FelineOverLord;
@@ -7,31 +8,32 @@ import org.junit.jupiter.api.Test;
 public class FelineOverlordTest {
     @Test
     void compare_to_test() {
-        //given
+        // given
         FelineOverLord f1 = new FelineOverLord("Viehch", 6);
         FelineOverLord f2 = new FelineOverLord("Minusch", 4);
-        //when
+        // when
         int a = f1.compareTo(f2);
-        //then
+        // then
         assertEquals(2, a);
-
     }
+
     @Test
     void name_test() {
-        //given
+        // given
         FelineOverLord f2 = new FelineOverLord("Minusch", 4);
-        //when
+        // when
         String n = f2.name();
-        //then
+        // then
         assertEquals(n, "Minusch");
     }
+
     @Test
-    void to_string_test(){
-        //given
+    void to_string_test() {
+        // given
         FelineOverLord f2 = new FelineOverLord("Minusch", 4);
-        //when
+        // when
         String s = f2.toString();
-        //then
-        assertEquals(s,"FelineOverLord[name=Minusch, weight=4]");
+        // then
+        assertEquals(s, "FelineOverLord[name=Minusch, weight=4]");
     }
 }
