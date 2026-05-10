@@ -38,7 +38,7 @@ application {
 
 spotless{
     java{
-        googleJavaFormat()
+        googleJavaFormat().aosp().reflowLongStrings()
         leadingTabsToSpaces(4)
     }
 }
